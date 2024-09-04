@@ -2,9 +2,9 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className="bg-white shadow-sm">
+    <header className="bg-white">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
-        <div className="w-full py-6 flex items-center justify-between border-b border-dark-orange lg:border-none">
+        <div className="w-full py-6 flex items-center justify-between lg:border-none">
           <div className="flex items-center">
             <Link href="/">
               <a className="flex items-center">
@@ -36,6 +36,8 @@ export default function Header() {
           </div>
         </div>
       </nav>
+      {/* Add gradient border for mobile */}
+      <div className="h-px bg-gradient-to-r from-transparent via-dark-orange to-transparent lg:hidden"></div>
     </header>
   );
 }
