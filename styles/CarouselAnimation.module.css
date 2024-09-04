@@ -1,0 +1,42 @@
+.carouselContainer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carouselWrapper {
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.carouselItem {
+  flex: 0 0 auto;
+  width: 250px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.estPrice, .sellPrice {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.estPrice {
+  color: #666;
+}
+
+.sellPrice {
+  color: #4CAF50;
+}
